@@ -1,0 +1,37 @@
+{
+  "tabela": "Projetos aprovados em Rouanet ou LIC (plataformas de patrocínio)",
+  "id": "grid-3L91xPklEB",
+  "descricao": "Plataformas/editais de fluxo contínuo via leis de incentivo que a equipe acompanha.",
+  "linhas": [
+    {
+      "nome": "Ambev Brasilidades 2026 | LICs estaduais",
+      "prazo": "Até 30 de setembro de 2026",
+      "site": "https://prosas.com.br/editais/16452-edital-ambev-brasilidades-2026?subdominio=prosas",
+      "notas": "AMBEV disponibiliza até R$67 milhões para projetos já aprovados (ou inscritos) nas leis estaduais de incentivo à cultura e ao esporte de todas as regiões do Brasil. Foco: projetos que celebrem as paixões nacionais e a diversidade cultural. Dúvidas: contato@editalbrasilidades.com.br"
+    },
+    {
+      "nome": "BIP Prosas | Banco de Incentivados",
+      "prazo": "Fluxo contínuo",
+      "site": "https://produtos.prosas.com.br/projetos-incentivados",
+      "notas": "Vitrine digital de projetos aprovados em leis de incentivo federais, estaduais ou municipais. Reúne iniciativas sociais, culturais, esportivas e ambientais aptas à captação. Não é edital — é plataforma contínua de visibilidade para conexão com patrocinadores."
+    },
+    {
+      "nome": "Vale Cultural (Instituto Cultural Vale)",
+      "prazo": "Janeiro a dezembro — fluxo contínuo",
+      "site": "https://institutoculturalvale.org/solicitacao-de-patrocinios/",
+      "notas": "Solicitação de patrocínios com recursos próprios. Inscrições com pelo menos 45 dias de antecedência da data de início do projeto. Aceita projetos culturais e técnico-institucionais."
+    },
+    {
+      "nome": "Atlas Schindler",
+      "prazo": "Fluxo contínuo",
+      "site": "https://www.schindler.com.br/pt/sobre-atlas-schindler/responsabilidade-socio-ambiental/projetos-sociais-e-culturais.html",
+      "notas": "Apoia arte, cultura, esporte e transformação social. Analisa propostas aprovadas em Leis de Incentivo Fiscal (federal/estadual/municipal) com publicação no DOU; proponente preferencialmente PJ. Aceita Rouanet, LIE, FUMCAD, Fundo do Idoso, PRONON, PRONAS/PCD. Email: patrocinios.atlas@arteeatitude.com.br"
+    },
+    {
+      "nome": "Instituto Claro — Plataforma de Patrocínios",
+      "prazo": "Fluxo contínuo",
+      "site": "https://www.claro.com.br/institucional/patrocinios",
+      "notas": "Apoia projetos de impacto social e ambiental. Linhas: cultura, esporte, educação, cidadania e meio ambiente. Apenas projetos aprovados por Leis de Incentivo Estaduais e Municipais (aporte via ICMS e ISS). Abrangência nacional, inscrições contínuas."
+    }
+  ]
+}

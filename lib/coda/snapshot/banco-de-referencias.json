@@ -1,0 +1,25 @@
+{
+  "tabela": "Banco de referências",
+  "id": "grid-2OSW6AGXeR",
+  "pagina": "Banco de textos",
+  "colunas": ["Evento/Ação", "Proponente", "Edital/Patrocinador", "Ano", "Status", "Tags", "Materiais"],
+  "linhas": [
+    { "Evento/Ação": "Grande Final 24/25", "Proponente": "Startup Grid (GJ+)", "Edital/Patrocinador": "Sebrae", "Ano": "2025", "Status": "Aprovado", "Tags": "Negócios", "Materiais": "https://drive.google.com/drive/u/2/folders/148POEq9G1COz6NdkCnEmkc0L6O4RBhlM" },
+    { "Evento/Ação": "Grande Final 24/25", "Proponente": "Startup Grid (GJ+)", "Edital/Patrocinador": "Embratur", "Ano": "2025", "Status": "Não aprovado", "Tags": "Tecnologia,Turismo,Startup", "Materiais": "https://drive.google.com/drive/u/2/folders/148POEq9G1COz6NdkCnEmkc0L6O4RBhlM" },
+    { "Evento/Ação": "Semifinais + Grande Final 24/25", "Proponente": "Startup Grid (GJ+)", "Edital/Patrocinador": "Apex", "Ano": "2025", "Status": "Aprovado", "Tags": "Negócios", "Materiais": "https://drive.google.com/drive/u/2/folders/1BR4RNomZSJPOn0m9LWXnysV5ZGDV9sy3" },
+    { "Evento/Ação": "JOIN 2025", "Proponente": "Acelera (Indie Hero)", "Edital/Patrocinador": "Sebrae", "Ano": "2025", "Status": "Aprovado", "Tags": "Negócios", "Materiais": "https://drive.google.com/drive/u/2/folders/1AmApSsQ6fVlYqZTFQ4lZp1j_1MDaYCsN" },
+    { "Evento/Ação": "JOIN 2025", "Proponente": "Acelera (Indie Hero)", "Edital/Patrocinador": "Apex", "Ano": "2025", "Status": "Não aprovado", "Tags": "Negócios", "Materiais": "https://drive.google.com/drive/u/2/folders/1c8TzkP84gvV-LJYZr30-ktiR7pprdfGL" },
+    { "Evento/Ação": "Digitoteca", "Proponente": "Plug and Plus", "Edital/Patrocinador": "FAPESC Mulheres", "Ano": "2025", "Status": "Aprovado", "Tags": "Educação,Tecnologia,Inclusão", "Materiais": "https://drive.google.com/drive/u/1/folders/1b_PAJNG4DYby8WV5lH5_zSR2HCXIlJQA" },
+    { "Evento/Ação": "Digitoteca", "Proponente": "PF - Vânia", "Edital/Patrocinador": "FAPERJ HUB RJ", "Ano": "2025", "Status": "Não aprovado", "Tags": "Educação,Tecnologia,Inclusão", "Materiais": "https://drive.google.com/drive/u/1/folders/1WxhyJAJSaUOrovEhSK42xv0B5ilyEb6K" },
+    { "Evento/Ação": "Mulheres Inovadoras 6ª Edição", "Proponente": "PF - Vânia", "Edital/Patrocinador": "FINEP", "Ano": "2025", "Status": "Aprovado", "Tags": "Tecnologia,Negócios,Gênero", "Materiais": "https://drive.google.com/drive/u/3/folders/1ETeKF3fEpPrO4H4T49OMHdmJfjgbIKyP" },
+    { "Evento/Ação": "Tech Criativa", "Proponente": "Plug and Plus", "Edital/Patrocinador": "Lei Rouanet", "Ano": "2025", "Status": "Aprovado", "Tags": "Educação,Cultura,Tecnologia", "Materiais": "https://drive.google.com/drive/u/3/folders/1USvrvvpo3Iysue1EczD10SXwmWziq5ES" },
+    { "Evento/Ação": "Ações de Educação", "Proponente": "Plug and Plus", "Edital/Patrocinador": "FAPESC Inovação Social", "Ano": "2025", "Status": "Não aprovado", "Tags": "Tecnologia,Educação", "Materiais": "https://drive.google.com/drive/u/1/folders/112BFf7WLisIoPQPFeICHLO9fAidyoylT" },
+    { "Evento/Ação": "Premiação", "Proponente": "PF - Juliana", "Edital/Patrocinador": "Empreendedor Social", "Ano": "2025", "Status": "Não aprovado", "Tags": "Negócios,Startup", "Materiais": "https://docs.google.com/document/d/1lAUXjEUXOWTeTF9Nq775-UyZP6h6a_9SRfsUPYa9MUc/edit" },
+    { "Evento/Ação": "Premiação", "Proponente": "PF - Vânia", "Edital/Patrocinador": "Empreendedor Social", "Ano": "2025", "Status": "Não aprovado", "Tags": "Negócios,Startup", "Materiais": "https://docs.google.com/document/d/1ILZj9GvLgr2aoDbEn7NoAqwP93w8R_T6OsJsKYoZspA/edit" },
+    { "Evento/Ação": "Premiação", "Proponente": "PF - Juliana", "Edital/Patrocinador": "BRICS Womens Contest", "Ano": "2025", "Status": "Não aprovado", "Tags": "Internacional,Negócios,Startup", "Materiais": "https://drive.google.com/drive/u/1/folders/1gRFPIPfv35IKdmnkXyWCF6TB_gmBedlM" },
+    { "Evento/Ação": "Premiação", "Proponente": "Acelera (Indie Hero)", "Edital/Patrocinador": "EWC 2025", "Ano": "2025", "Status": "Não aprovado", "Tags": "Negócios,Internacional", "Materiais": "https://drive.google.com/drive/folders/1pKjWDZcgrWIrnsDabvAYcDNZnQxaUmGr" },
+    { "Evento/Ação": "Premiação", "Proponente": "PF - Juliana", "Edital/Patrocinador": "Sebrae Mulher Empreendedora", "Ano": "2025", "Status": "Aprovado", "Tags": "Negócios,Startup,Gênero", "Materiais": "https://drive.google.com/drive/u/3/folders/1BP6np8N1K7F3cI-VwV-H_39x55-f3ZQ5" },
+    { "Evento/Ação": "Premiação", "Proponente": "PF - Vânia", "Edital/Patrocinador": "Sebrae Mulher Empreendedora", "Ano": "2025", "Status": "Não aprovado", "Tags": "Negócios,Startup,Gênero", "Materiais": "https://drive.google.com/drive/u/3/folders/1yy9-6xmp8cQYtrReVaQuWaYpQp09iAKJ" },
+    { "Evento/Ação": "Semifinais + Grande Final 25/26", "Proponente": "Startup Grid (GJ+)", "Edital/Patrocinador": "Banco do Brasil", "Ano": "2026", "Status": "Não aprovado", "Tags": "Cultura,Arte", "Materiais": "https://drive.google.com/drive/u/1/folders/1biNVYEwOTVZHs9ELDL053tK_8b-8iwhg" }
+  ]
+}

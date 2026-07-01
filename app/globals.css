@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0613;
+  --color-surface: #140d24;
+  --color-surface-2: #1d1433;
+  --color-border: #2c2050;
+  --color-neon: #c026d3;
+  --color-neon-2: #7c3aed;
+  --color-cyan: #22d3ee;
+  --color-lime: #a3e635;
+  --color-amber: #fbbf24;
+  --color-rose: #fb7185;
+  --color-ink: #ece9f8;
+  --color-muted: #9d93c2;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(124, 58, 237, 0.18), transparent 60%),
+    radial-gradient(900px 500px at -10% 30%, rgba(192, 38, 211, 0.12), transparent 60%),
+    var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)), var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+
+.card-glow {
+  box-shadow: 0 0 0 1px rgba(192, 38, 211, 0.25), 0 8px 40px -12px rgba(124, 58, 237, 0.45);
+}
+
+.neon-text {
+  background: linear-gradient(90deg, #e879f9, #a78bfa, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #c026d3, #7c3aed);
+  color: white;
+}
+.btn-primary:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 24px -4px rgba(192, 38, 211, 0.7);
+}
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.btn-ghost {
+  border-color: var(--color-border);
+  color: var(--color-muted);
+}
+.btn-ghost:hover {
+  color: var(--color-ink);
+  border-color: var(--color-neon);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.nav-link:hover {
+  color: var(--color-ink);
+  background: rgba(124, 58, 237, 0.12);
+}
+.nav-link.active {
+  color: var(--color-ink);
+  background: linear-gradient(90deg, rgba(192, 38, 211, 0.22), rgba(124, 58, 237, 0.12));
+  border: 1px solid rgba(192, 38, 211, 0.35);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 1px solid;
+}
+
+.scrollbar-slim::-webkit-scrollbar { height: 8px; width: 8px; }
+.scrollbar-slim::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 4px; }
+
+@keyframes pulse-radar {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  70% { transform: scale(1.6); opacity: 0; }
+  100% { opacity: 0; }
+}
+.radar-ping::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 2px solid var(--color-cyan);
+  animation: pulse-radar 2s ease-out infinite;
+}
+
+.prose-edital h1 { font-size: 1.4rem; font-weight: 800; margin: 1.2rem 0 0.6rem; }
+.prose-edital h2 { font-size: 1.15rem; font-weight: 700; margin: 1.1rem 0 0.5rem; color: #d8b4fe; }
+.prose-edital h3 { font-size: 1rem; font-weight: 700; margin: 1rem 0 0.4rem; }
+.prose-edital p { margin: 0.45rem 0; line-height: 1.65; color: var(--color-ink); }
+.prose-edital li { margin: 0.25rem 0 0.25rem 1.2rem; list-style: disc; line-height: 1.55; }
+.prose-edital strong { color: #f0abfc; }
+.prose-edital blockquote { border-left: 3px solid var(--color-neon); padding-left: 0.8rem; color: var(--color-muted); font-style: italic; margin: 0.6rem 0; }
+.prose-edital table { border-collapse: collapse; width: 100%; margin: 0.9rem 0; font-size: 0.88rem; }
+.prose-edital th, .prose-edital td { border: 1px solid var(--color-border); padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; line-height: 1.45; }
+.prose-edital th { background: var(--color-surface-2); color: #f0abfc; font-weight: 700; }
+.prose-edital tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
