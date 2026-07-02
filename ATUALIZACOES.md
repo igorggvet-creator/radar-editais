@@ -15,6 +15,15 @@ o que o outro mudou**.
 
 ---
 
+## 2026-07-01 — Igor (via Claude) — sincronização automática
+**O que mudou:** As regras do `CLAUDE.md` passaram a incluir a sincronização como PRIMEIRO passo de
+qualquer alteração (`git pull --rebase --autostash`), então o Claude puxa as novidades da equipe
+sozinho antes de mexer em algo. O `PROMPT-COLABORADOR.md` foi simplificado — a pessoa só descreve a
+mudança; sincronizar, registrar e publicar acontecem pelas regras do projeto.
+**Por quê:** Tirar o passo-a-passo manual; a pessoa só descreve o que quer e o resto acontece sozinho.
+**Arquivos:** `CLAUDE.md`, `PROMPT-COLABORADOR.md`
+**Deploy:** automático via push na main
+
 ## 2026-07-01 — Igor (via Claude)
 **O que mudou:** Configurada a colaboração no repositório — criados `CLAUDE.md` (guia do projeto +
 regras de colaboração), este `ATUALIZACOES.md` (registro de mudanças) e `PROMPT-COLABORADOR.md`

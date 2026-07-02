@@ -21,31 +21,26 @@ Quero configurar o projeto "Radar de Editais" para trabalhar nele.
 
 ---
 
-## 2) Toda vez que for fazer uma mudança
+## 2) Para fazer uma mudança — é só descrever!
 
-Copie o texto abaixo, troque **[DESCREVA A MUDANÇA]** pelo que você quer e **[SEU NOME]** pelo seu nome:
+Você **não precisa** mandar puxar as novidades, registrar no histórico, nem dar "push": isso já
+acontece **sozinho**, porque está nas regras do projeto (o `CLAUDE.md`, que o Claude Code lê
+automaticamente ao abrir o projeto). Basta descrever o que quer e assinar com seu nome. Exemplo:
 
 ```
-Você vai me ajudar a alterar o projeto "Radar de Editais". Siga estes passos, nesta ordem:
-
-1. Leia o CLAUDE.md e o ATUALIZACOES.md (na raiz do projeto) para lembrar do contexto e das regras.
-2. Rode: git pull   (para pegar as últimas mudanças da outra pessoa).
-3. Faça esta mudança: [DESCREVA A MUDANÇA — ex.: "no painel, adicionar um filtro que mostra só os
-   editais com prazo nos próximos 15 dias"].
-4. Registre a mudança no TOPO do ATUALIZACOES.md, assinando com o nome: [SEU NOME].
-5. Faça commit e push na branch main, com uma mensagem clara em português.
-6. Me explique, em linguagem simples, o que você mudou, e confirme que subiu para o GitHub.
-
-Regras importantes: nunca suba senhas nem o arquivo .env.local. Se aparecer conflito no git,
-pare e me avise antes de continuar.
+[DESCREVA O QUE QUER MUDAR — ex.: "no painel, quero uma coluna mostrando o valor de cada edital"].
+Pode publicar quando terminar. (assino: [SEU NOME])
 ```
+
+Só isso. O Claude vai, nesta ordem: **sincronizar** com a equipe → **fazer** a mudança →
+**registrar** no ATUALIZACOES.md → **publicar** (push). Em 1–2 min a versão online
+(https://radar-editais-nine.vercel.app) atualiza sozinha.
 
 ---
 
 ## Dicas
-- **Descreva o que quer como se explicasse para uma pessoa:** "quero o botão X azul", "quero uma
-  coluna mostrando o valor do edital". O Claude cuida do código.
-- Depois que ele der o push, a versão online (https://radar-editais-nine.vercel.app) atualiza
-  sozinha em **1–2 minutos**.
+- **Descreva como se explicasse para uma pessoa:** "quero o botão X azul", "quero uma coluna com Y".
+  O Claude cuida do código.
 - Na dúvida se algo pode quebrar, peça: **"me explica o que vai mudar antes de fazer"**.
 - Se ele pedir para instalar algo ou apagar arquivos que você não reconhece, **pare e pergunte ao Igor**.
+- Quer conferir o que já foi mexido? Abra o **ATUALIZACOES.md** (ou o histórico no GitHub).

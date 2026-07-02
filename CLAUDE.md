@@ -28,19 +28,28 @@ Stack: **Next.js 15** (App Router, TypeScript) + **Tailwind** + **Supabase (Post
 
 ## 🤝 Regras de colaboração (SEMPRE seguir)
 Este repositório é compartilhado por **duas pessoas** (Igor e a colaboradora), cada uma usando seu
-próprio Claude Code. Para ninguém sobrescrever o trabalho do outro e todos saberem o que mudou:
+próprio Claude Code. Siga isto para ninguém sobrescrever o trabalho do outro e todos saberem o que mudou:
 
-1. **Antes de começar:** rode `git pull` para pegar as mudanças mais recentes da outra pessoa.
-2. **Faça a alteração** pedida.
-3. **Registre no `ATUALIZACOES.md`**: uma entrada nova **no topo**, com data, quem fez, o que mudou,
-   por quê e os arquivos (siga o formato que já está no arquivo).
-4. **Commit e push** na branch `main`, com mensagem clara em português.
-5. Ao terminar, **explique em texto** para a pessoa o que foi alterado.
-6. **Nunca** commite segredos: `.env.local`, tokens (`ghp_`, `vcp_`, `sbp_`), senhas. O `.gitignore`
-   já bloqueia — **não** use `git add -f` para forçar.
-7. Se aparecer **conflito de git**, não force: resolva com cuidado ou peça ajuda ao Igor.
+### ⬇️ Primeiro passo ao atender um pedido — sincronizar
+**Sempre que for fazer uma alteração, comece puxando o que a equipe publicou:**
 
-> Isso vale para os **dois lados** — o Claude do Igor também segue estas regras.
+    git pull --rebase --autostash
+
+Isso traz do GitHub as mudanças da outra pessoa antes de você mexer em algo (evita sobrescrever o
+trabalho dela). Se aparecer conflito, **pare** e peça ajuda ao Igor — não force.
+
+### ⬆️ Ao fazer QUALQUER alteração (sempre, sem precisar ser lembrado)
+1. Faça a alteração pedida.
+2. **Registre no `ATUALIZACOES.md`**: entrada nova **no topo** (data, quem fez, o que mudou, por quê,
+   arquivos — siga o formato do arquivo).
+3. **Commit e push** na branch `main`, com mensagem clara em português.
+4. **Explique em texto** para a pessoa o que mudou.
+
+### 🔒 Sempre
+- **Nunca** commite segredos (`.env.local`, tokens `ghp_`/`vcp_`/`sbp_`, senhas). Não use `git add -f`.
+- Se houver **conflito de git**, não force: pare e peça ajuda ao Igor.
+
+> Vale para os **dois lados** — o Claude do Igor também segue isto.
 
 ## Deploy e dados
 - **Código:** todo `git push` na `main` → a **Vercel** publica automaticamente.
