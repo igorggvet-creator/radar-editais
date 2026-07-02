@@ -51,3 +51,15 @@ próprio Claude Code. Para ninguém sobrescrever o trabalho do outro e todos sab
 ## Segurança
 - Nunca subir `.env*`, tokens, senhas ou banco local.
 - O acesso ao app é protegido por senha (`APP_PASSWORD`).
+
+## ⚠️ Se um deploy aparecer como "BLOCKED" na Vercel
+A Vercel bloqueia deploys cujo **autor do commit não está vinculado a uma conta do GitHub**.
+Isso quase sempre é o e-mail do git errado. Configure o git com o **e-mail da sua conta do GitHub**:
+
+```
+git config user.email "SEU-EMAIL-DA-CONTA-GITHUB"
+git config user.name "SEU-USUARIO-GITHUB"
+```
+
+(Pode usar o e-mail *noreply* do GitHub, no formato `ID+usuario@users.noreply.github.com`, que fica
+em GitHub → Settings → Emails.) Depois faça um novo commit e push, e o deploy sai do BLOCKED.
