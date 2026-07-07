@@ -15,6 +15,16 @@ o que o outro mudou**.
 
 ---
 
+## 2026-07-07 — Igor (via Claude) — export PDF estruturado das propostas
+**O que mudou:** Botão **"Baixar PDF"** na página da proposta (`/propostas/[id]`). Gera um PDF
+estruturado (A4, margens, tipografia de documento) a partir do texto da proposta usando o motor de
+impressão do próprio navegador — funciona **igual no local e na Vercel**, sem dependência nova (nada
+de puppeteer/chromium no build). Mantém o export **.docx** (agora botão secundário). Reaproveita o
+HTML que a página já monta do Markdown.
+**Por quê:** Pedido do Igor — precisava de um arquivo PDF já estruturado, não só o texto no banco/.docx.
+**Arquivos:** `components/baixar-pdf.tsx` (novo), `app/propostas/[id]/page.tsx` (botão + reuso do HTML)
+**Deploy:** automático via push na main
+
 ## 2026-07-07 — Igor (via Claude) — Nível "Com dependências" nas Fontes
 **O que mudou:** Novo Nível na página **Fontes**: **🔗 Com dependências** — agrupa plataformas/programas
 que exigem um pré-requisito antes de captar (ex.: precisar de um projeto já aprovado na Lei de

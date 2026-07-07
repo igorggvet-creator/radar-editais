@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { one } from "@/lib/db";
 import { fmtData } from "@/components/ui";
+import { BaixarPdf } from "@/components/baixar-pdf";
 
 export const dynamic = "force-dynamic";
 
@@ -107,6 +108,7 @@ export default async function PropostaPage({
   }>("SELECT * FROM propostas WHERE id = ?", [id]);
   if (!p) notFound();
 
+  const conteudoHtml = mdParaHtml(p.conteudo);
   const gerando = p.status === "gerando";
   const erro = p.status === "erro";
 
@@ -123,9 +125,16 @@ export default async function PropostaPage({
           ← voltar para o edital
         </Link>
         {!gerando && !erro && (
-          <a href={`/api/propostas/${p.id}/docx`} className="btn btn-primary">
-            ⬇ Baixar .docx
-          </a>
+          <div className="flex items-center gap-2">
+            <BaixarPdf
+              titulo={p.titulo ?? "Proposta"}
+              html={conteudoHtml}
+              meta={`Rascunho #${p.id} · ${fmtData(p.criado_em)} — revisar antes de submeter`}
+            />
+            <a href={`/api/propostas/${p.id}/docx`} className="btn btn-ghost">
+              ⬇ .docx
+            </a>
+          </div>
         )}
       </div>
 
@@ -163,7 +172,7 @@ export default async function PropostaPage({
           </div>
           <div
             className="prose-edital"
-            dangerouslySetInnerHTML={{ __html: mdParaHtml(p.conteudo) }}
+            dangerouslySetInnerHTML={{ __html: conteudoHtml }}
           />
         </div>
       )}
