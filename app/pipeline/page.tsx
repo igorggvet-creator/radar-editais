@@ -4,7 +4,7 @@ import { STATUS_META, ScoreRing, PrazoChip } from "@/components/ui";
 
 export const dynamic = "force-dynamic";
 
-const COLUNAS = ["radar", "triagem", "match", "escrita", "submetido"];
+const COLUNAS = ["radar", "triagem", "match", "com-dependencia", "escrita", "submetido"];
 
 export default async function PipelinePage() {
   const editais = await all<EditalRow>(
@@ -31,7 +31,7 @@ export default async function PipelinePage() {
         </p>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-4 items-start">
         {COLUNAS.map((col) => {
           const meta = STATUS_META[col];
           const items = porColuna.get(col) ?? [];

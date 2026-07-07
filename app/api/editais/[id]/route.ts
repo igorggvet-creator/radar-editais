@@ -5,6 +5,7 @@ const STATUS_VALIDOS = [
   "radar",
   "triagem",
   "match",
+  "com-dependencia",
   "escrita",
   "submetido",
   "descartado",

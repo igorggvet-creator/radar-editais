@@ -15,6 +15,16 @@ o que o outro mudou**.
 
 ---
 
+## 2026-07-07 — Igor (via Claude) — novo nível "Com dependência"
+**O que mudou:** Novo nível no pipeline: **🔗 Com dependência**. É um lugar separado para editais que
+dão *match* mas dependem de outra coisa antes (ex.: precisar de um Rouanet aprovado para viabilizar
+outro projeto). O edital vira uma coluna própria no `/pipeline`, aparece no filtro de `/editais` e no
+seletor de status do edital; e a reanálise **não** o puxa de volta para "match" (mesma proteção que
+escrita/submetido/descartado já têm). **Sem migração de banco** — o campo `status` é texto livre.
+**Por quê:** Pedido da colaboradora (áudio) — um match não deve entrar direto na fila ativa quando tem dependência.
+**Arquivos:** `components/ui.tsx` (STATUS_META), `app/api/editais/[id]/route.ts` (STATUS_VALIDOS), `app/pipeline/page.tsx` (COLUNAS + grade 6 colunas)
+**Deploy:** automático via push na main
+
 ## 2026-07-01 — Igor (via Claude) — sincronização automática
 **O que mudou:** As regras do `CLAUDE.md` passaram a incluir a sincronização como PRIMEIRO passo de
 qualquer alteração (`git pull --rebase --autostash`), então o Claude puxa as novidades da equipe

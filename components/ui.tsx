@@ -8,6 +8,11 @@ export const STATUS_META: Record<
   radar: { label: "Radar", cor: "border-cyan-400/50 text-cyan-300", emoji: "📡" },
   triagem: { label: "Triagem", cor: "border-amber-400/50 text-amber-300", emoji: "🔍" },
   match: { label: "Match", cor: "border-fuchsia-400/50 text-fuchsia-300", emoji: "🎯" },
+  "com-dependencia": {
+    label: "Com dependência",
+    cor: "border-orange-400/50 text-orange-300",
+    emoji: "🔗",
+  },
   escrita: { label: "Escrita", cor: "border-violet-400/50 text-violet-300", emoji: "✍️" },
   submetido: { label: "Submetido", cor: "border-lime-400/50 text-lime-300", emoji: "🚀" },
   descartado: { label: "Descartado", cor: "border-zinc-500/50 text-zinc-400", emoji: "🗑️" },
