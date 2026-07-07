@@ -114,8 +114,11 @@ export default async function FontesPage() {
       </div>
 
       {NIVEIS_FONTE.map((nivel) => {
-        const fontes = FONTES_CATALOGO.filter((f) => f.nivel === nivel.nivel);
         const ehRss = nivel.nivel === 5;
+        const ehDependencia = nivel.nivel === 6;
+        const fontes = ehDependencia
+          ? FONTES_CATALOGO.filter((f) => f.dependencia)
+          : FONTES_CATALOGO.filter((f) => f.nivel === nivel.nivel && !f.dependencia);
         if (fontes.length === 0 && !ehRss) return null;
         return (
           <section key={nivel.nivel}>

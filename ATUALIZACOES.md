@@ -15,6 +15,15 @@ o que o outro mudou**.
 
 ---
 
+## 2026-07-07 — Igor (via Claude) — Nível "Com dependências" nas Fontes
+**O que mudou:** Novo Nível na página **Fontes**: **🔗 Com dependências** — agrupa plataformas/programas
+que exigem um pré-requisito antes de captar (ex.: precisar de um projeto já aprovado na Lei de
+Incentivo/Rouanet). Começou com **PROMAC**, **ISS Rio** e **Chamada Cultural Vale** (leis de incentivo),
+que saíram do Nível 3 para esse nível. Implementado com um flag `dependencia` no catálogo de fontes.
+**Por quê:** Pedido do Igor — ter, nas Fontes, um nível para plataformas com dependência.
+**Arquivos:** `lib/fontes-catalogo.ts` (NIVEIS_FONTE nível 6 + flag `dependencia` em promac/iss-rio/vale-cultural), `app/fontes/page.tsx` (render do nível)
+**Deploy:** automático via push na main
+
 ## 2026-07-07 — Igor (via Claude) — novo nível "Com dependência"
 **O que mudou:** Novo nível no pipeline: **🔗 Com dependência**. É um lugar separado para editais que
 dão *match* mas dependem de outra coisa antes (ex.: precisar de um Rouanet aprovado para viabilizar

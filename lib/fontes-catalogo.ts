@@ -50,6 +50,13 @@ export const NIVEIS_FONTE: NivelFonte[] = [
     descricao:
       "Fontes configuráveis que entram na varredura automática via RSS/Atom (aba Configurações).",
   },
+  {
+    nivel: 6,
+    nome: "Com dependências",
+    emoji: "🔗",
+    descricao:
+      "Plataformas/programas com pré-requisito — só dá para captar depois de outra aprovação (ex.: precisar de um projeto já aprovado na Lei de Incentivo/Rouanet antes).",
+  },
 ];
 
 export interface FonteCatalogo {
@@ -62,6 +69,7 @@ export interface FonteCatalogo {
   fonteSlug?: string; // casa com editais.fonte para contagem ao vivo
   empresas?: string[]; // contas/CNPJs que usam essa plataforma
   descricao?: string;
+  dependencia?: boolean; // tem pré-requisito (ex.: precisa de aprovação em lei de incentivo antes) → Nível 6
 }
 
 export const FONTES_CATALOGO: FonteCatalogo[] = [
@@ -199,6 +207,7 @@ export const FONTES_CATALOGO: FonteCatalogo[] = [
     tipo: "Lei de incentivo (municipal SP)",
     noRadar: false,
     descricao: "Programa Municipal de Apoio a Projetos Culturais de São Paulo.",
+    dependencia: true,
   },
   {
     slug: "brde",
@@ -219,6 +228,7 @@ export const FONTES_CATALOGO: FonteCatalogo[] = [
     noRadar: false,
     empresas: ["startup-grid"],
     descricao: "Lei do ISS de incentivo à cultura do município do Rio de Janeiro.",
+    dependencia: true,
   },
   {
     slug: "vale-cultural",
@@ -229,6 +239,7 @@ export const FONTES_CATALOGO: FonteCatalogo[] = [
     noRadar: false,
     empresas: ["startup-grid", "plug-and-plus"],
     descricao: "Instituto Cultural Vale — Lei Rouanet e Lei do Audiovisual.",
+    dependencia: true,
   },
 
   // ---------- Nível 4: patrocínio corporativo ----------
