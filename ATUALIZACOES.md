@@ -15,6 +15,14 @@ o que o outro mudou**.
 
 ---
 
+## 2026-07-07 — Igor (via Claude) — página "Escritos" no menu
+**O que mudou:** Novo item no menu da esquerda: **✍️ Escritos** (`/propostas`) — página que lista
+todos os editais com proposta redigida (um card por edital, a proposta mais recente de cada), com
+status (pronta/escrevendo/erro), empresa, pilar, data e link pra abrir e baixar (PDF/.docx).
+**Por quê:** Pedido do Igor — ter um lugar único com todos os editais escritos.
+**Arquivos:** `app/propostas/page.tsx` (novo índice), `components/sidebar.tsx` (item de menu)
+**Deploy:** automático via push na main
+
 ## 2026-07-07 — Igor (via Claude) — export PDF estruturado das propostas
 **O que mudou:** Botão **"Baixar PDF"** na página da proposta (`/propostas/[id]`). Gera um PDF
 estruturado (A4, margens, tipografia de documento) a partir do texto da proposta usando o motor de

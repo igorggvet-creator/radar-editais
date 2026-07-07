@@ -7,6 +7,7 @@ const LINKS = [
   { href: "/", label: "Dashboard", icon: "📡" },
   { href: "/editais", label: "Editais", icon: "📑" },
   { href: "/pipeline", label: "Pipeline", icon: "🗂️" },
+  { href: "/propostas", label: "Escritos", icon: "✍️" },
   { href: "/fontes", label: "Fontes", icon: "🌐" },
   { href: "/banco-textos", label: "Banco de Textos", icon: "📚" },
   { href: "/empresas", label: "Empresas & CNPJs", icon: "🏢" },
