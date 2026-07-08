@@ -15,6 +15,21 @@ o que o outro mudou**.
 
 ---
 
+## 2026-07-08 — Milena — Banco de Textos com 28 projetos catalogados
+**O que mudou:** Criei um novo módulo `lib/banco-textos-projetos/` que cataloga 28 projetos
+submetidos (12 Startup GRID/GJ+, 10 Acelera Indie e 6 Plug and Plus), extraídos de ~200 arquivos
+(.docx/.pdf/.xlsx) das minhas pastas locais. Cada entrada tem projeto, patrocinador, ano, valor
+solicitado, escopo, público-alvo, resultados, temas e pilar sugerido. Adicionei o endpoint
+`/api/banco-textos-sync` (POST) e o botão **🔄 Sincronizar Banco de Textos** na tela
+`/config` — clicar importa/atualiza tudo no Supabase (idempotente, dedup por empresa+categoria+título).
+**Por quê:** Dar mais contexto pra IA gerar propostas melhores e fazer matches de editais mais
+precisos, usando o histórico real de projetos escritos por cada empresa como referência.
+**Arquivos:** `lib/banco-textos-projetos/import.ts` + `snapshot/projetos.json` (novos),
+`app/api/banco-textos-sync/route.ts` (novo), `app/config/page.tsx` (botão de sincronização).
+**Como usar:** No app em produção, entrar em Configurações e clicar em **🔄 Sincronizar Banco de
+Textos** uma vez (leva ~2s). Depois disso os 28 projetos aparecem em `/banco-textos`.
+**Deploy:** automático via push na main
+
 ## 2026-07-07 — Igor (via Claude) — página "Escritos" no menu
 **O que mudou:** Novo item no menu da esquerda: **✍️ Escritos** (`/propostas`) — página que lista
 todos os editais com proposta redigida (um card por edital, a proposta mais recente de cada), com

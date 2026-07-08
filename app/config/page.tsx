@@ -35,6 +35,8 @@ export default function ConfigPage() {
   const [salvando, setSalvando] = useState(false);
   const [codaMsg, setCodaMsg] = useState<string | null>(null);
   const [codaSync, setCodaSync] = useState(false);
+  const [projMsg, setProjMsg] = useState<string | null>(null);
+  const [projSync, setProjSync] = useState(false);
   const [modoIa, setModoIa] = useState<Settings["modoIa"]>("auto");
   const [iaMax, setIaMax] = useState(10);
   const [reMsg, setReMsg] = useState<string | null>(null);
@@ -160,6 +162,28 @@ export default function ConfigPage() {
       setCodaMsg(`❌ ${err instanceof Error ? err.message : err}`);
     } finally {
       setCodaSync(false);
+    }
+  }
+
+  async function sincronizarProjetos() {
+    setProjSync(true);
+    setProjMsg(null);
+    try {
+      const res = await fetch("/api/banco-textos-sync", { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.erro ?? "falha");
+      const partes = [
+        `✅ Banco de Textos sincronizado`,
+        `${data.inseridos} novo(s)`,
+        `${data.atualizados} atualizado(s)`,
+        `${data.ignorados} sem mudança`,
+      ];
+      if (data.erros?.length) partes.push(`⚠️ ${data.erros.length} erro(s)`);
+      setProjMsg(partes.join(" · "));
+    } catch (err) {
+      setProjMsg(`❌ ${err instanceof Error ? err.message : err}`);
+    } finally {
+      setProjSync(false);
     }
   }
 
@@ -334,6 +358,21 @@ export default function ConfigPage() {
             {codaSync ? "Importando..." : "🔄 Sincronizar Coda"}
           </button>
           {codaMsg && <span className="text-sm text-muted">{codaMsg}</span>}
+        </div>
+      </section>
+
+      <section className="card p-6 space-y-2">
+        <h2 className="font-bold">📚 Banco de Textos — Projetos submetidos</h2>
+        <p className="text-sm text-muted">
+          Catalogação dos projetos escritos por Startup GRID (GJ+), Acelera Indie
+          e Plug and Plus, com escopo, orçamento, patrocinador e temas. A IA usa
+          isso pra ganhar precisão nas escritas de propostas e no match de editais.
+        </p>
+        <div className="flex items-center gap-3 pt-1">
+          <button className="btn btn-primary" onClick={sincronizarProjetos} disabled={projSync}>
+            {projSync ? "Importando..." : "🔄 Sincronizar Banco de Textos"}
+          </button>
+          {projMsg && <span className="text-sm text-muted">{projMsg}</span>}
         </div>
       </section>
 
